@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#0D0A1A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👑 Royal Advisor"
+        android:textSize="28sp"
+        android:textColor="#FFD700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Советник для Royal Kingdom"
+        android:textColor="#8A7A9A"
+        android:textSize="14sp"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶ Запустить советника"
+        android:backgroundTint="#FFD700"
+        android:textColor="#1A1030"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="■ Остановить"
+        android:backgroundTint="#2A2040"
+        android:textColor="#8A7A9A"/>
+</LinearLayout>
