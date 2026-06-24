@@ -22,6 +22,8 @@ jobs:
           gradle-version: '7.6.1'
 
       - name: Build APK
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: gradle assembleDebug
 
       - name: Upload APK
