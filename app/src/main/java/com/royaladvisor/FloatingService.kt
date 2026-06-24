@@ -15,7 +15,7 @@ import java.net.URL
 class FloatingService : Service() {
     private lateinit var wm: WindowManager
     private lateinit var floatView: View
-    private val API_KEY = "AQ.Ab8RN6Kw4FfzjviPXv1U31kKiR5xdxbXNMcW8l-BhyafuYn5DA"
+    private val API_KEY = BuildConfig.GEMINI_API_KEY"
 
     override fun onBind(intent: Intent?): IBinder? = null
 
