@@ -12,6 +12,7 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
+        buildConfigField "String", "GEMINI_API_KEY", "\"${System.getenv('GEMINI_API_KEY') ?: ''}\""
     }
     buildTypes {
         release { minifyEnabled false }
@@ -21,10 +22,14 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions { jvmTarget = '11' }
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
+    implementation 'org.json:json:20231013'
 }
